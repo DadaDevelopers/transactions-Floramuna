@@ -28,7 +28,7 @@ def decode_transaction(hex_string):
     version = int.from_bytes(data[offset:offset + 4], "little")
     offset += 4
 
-    # Check for SegWit marker and flag
+    # Checking for SegWit marker and flag
     marker = None
     flag = None
     segwit = False
